@@ -289,15 +289,16 @@ class MenuHome extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             SizedBox(
                 height: MediaQuery.of(context).size.height * 0.1,
                 child: Image.asset(image)),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.only(top: 8.0),
               child: Text(
                 title,
-                style: subTitleBlack,
+                style: const TextStyle(fontSize: 12),
                 textAlign: TextAlign.center,
               ),
             )
